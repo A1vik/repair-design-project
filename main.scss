@@ -1,3 +1,123 @@
+@import "./assets/fonts";
+@import "./assets/variables";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
+
   font-size: 15px;
+  font-family: $fontBook;
+  color: $mainColor;
+  background-color: $bgColorSide;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: $desktopWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Button*/
+
+.button {
+  padding: 13px 33px;
+
+  background-color: $yellowColor;
+  font-family: $fontDemiIt;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $mainColor;
+  border-radius: 2px;
+  font-size: 13px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $yellowColor;
+  }
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+
+  padding: 36px 100px 36px 82px;
+
+  background-color: $bgColorDark;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header__logo {
+  margin-right: 95px;
+
+  font-family: $fontDemi;
+  color: $yellowColor;
+
+  &:hover {
+    color: darken($yellowColor, 20%);
+  }
+}
+
+/* Menu */
+
+.menu__item {
+  margin-right: 47px;
+}
+
+.menu__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu__link {
+  color: $mainColor;
+  font-family: $fontBook;
+
+  &:hover {
+    color: $yellowColor;
+  }
+}
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+
+  list-style: none;
+}
+
+
+.contacts__link--underline {
+  margin-right: 45px;
+
+  text-decoration: underline;
+  color: $yellowColor;
+  font-family: $fontDemi;
+
+  &:hover {
+    color: darken($yellowColor, 20%);
+  }
 }
