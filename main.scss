@@ -25,6 +25,14 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
 .wrapper {
   max-width: $desktopWidth;
   width: 100%;
@@ -34,6 +42,8 @@ a {
 /* Button*/
 
 .button {
+  display: inline-block;
+  vertical-align: middle;
   padding: 13px 33px;
 
   background-color: $yellowColor;
@@ -41,21 +51,29 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: $mainColor;
+  border: none;
   border-radius: 2px;
   font-size: 13px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 
   &:hover {
-    background-color: #ffffff;
+    background-color: transparent;
     color: $yellowColor;
+    box-shadow: 0 0 0 2px $yellowColor;
+  }
+
+  &:active {
+    transform: translateY(3px);
   }
 }
 
 /* HEADER */
 
-.header {
+.page-header {
   display: flex;
+  align-items: center;
 
-  padding: 36px 100px 36px 82px;
+  padding: 23px 100px 23px 82px;
 
   background-color: $bgColorDark;
   text-transform: uppercase;
@@ -101,6 +119,7 @@ a {
 
 .contacts {
   display: flex;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -121,3 +140,90 @@ a {
     color: darken($yellowColor, 20%);
   }
 }
+
+/* MAIN */
+
+/* Hero */ 
+
+.hero {
+  position: relative;
+  min-height: 707px;
+  
+  background-color: $bgColorDark;
+}
+
+.hero__instagram {
+  position: absolute;
+  top: 260px;
+  left: 15px;
+  display: block;
+
+  color: $yellowColor;
+  transform: rotate(90deg);
+  font-family: $fontDemi;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.hero__wrapper {
+  margin-left: 82px;
+  padding-left: 60px;
+  padding-top: 194px;
+
+  background-image: url('./assets/img/bg-hero.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 40px;
+  line-height: 53px;
+  font-family: $fontYeseva;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  width: 500px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  font-family: $fontBook;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.hero__button {
+  margin-right: 19px;
+  margin-bottom: 208px;
+}
+
+
+/* Projects */ 
+.projects {
+  position: relative;
+  min-height: 610px;
+
+  background-color: $bgColorDark;
+}
+
+.projects__complete {
+  position: absolute;
+}
+
+.projects__slider {
+  padding-top: 60px;
+  padding-left: 100px;
+}
+
+/* Slider */
+
+.slider__list {
+  display: flex;
+  padding-left: 594px;
+}
+
+/* Description */ 
+

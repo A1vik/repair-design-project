@@ -44,7 +44,7 @@
   font-family: 'YesevaOne-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.ttf") format("ttf");
+  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -93,7 +93,7 @@
   font-family: 'YesevaOne-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.ttf") format("ttf");
+  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.woff") format("woff");
 }
 
 html {
@@ -111,13 +111,19 @@ html {
 body {
   margin: 0;
   font-size: 15px;
-  font-family: "FuturaBookC", "Arial", sans-serif;
+  font-family: "FuturaBookC", Arial, sans-serif;
   color: #ffffff;
   background-color: #252525;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .wrapper {
@@ -128,27 +134,42 @@ a {
 
 /* Button*/
 .button {
+  display: inline-block;
+  vertical-align: middle;
   padding: 13px 33px;
   background-color: #E3B873;
-  font-family: "FuturaDemiC-Italic", "Arial", sans-serif;
+  font-family: "FuturaDemiC-Italic", Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
   border-radius: 2px;
   font-size: 13px;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 }
 
 .button:hover {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #E3B873;
+  -webkit-box-shadow: 0 0 0 2px #E3B873;
+          box-shadow: 0 0 0 2px #E3B873;
+}
+
+.button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 /* HEADER */
-.header {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 36px 100px 36px 82px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 23px 100px 23px 82px;
   background-color: #131313;
   text-transform: uppercase;
   font-size: 14px;
@@ -156,7 +177,7 @@ a {
 
 .header__logo {
   margin-right: 95px;
-  font-family: "FuturaDemiC", "Arial", sans-serif;
+  font-family: "FuturaDemiC", Arial, sans-serif;
   color: #E3B873;
 }
 
@@ -180,7 +201,7 @@ a {
 
 .menu__link {
   color: #ffffff;
-  font-family: "FuturaBookC", "Arial", sans-serif;
+  font-family: "FuturaBookC", Arial, sans-serif;
 }
 
 .menu__link:hover {
@@ -192,6 +213,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   margin-left: 20px;
@@ -202,10 +226,89 @@ a {
   margin-right: 45px;
   text-decoration: underline;
   color: #E3B873;
-  font-family: "FuturaDemiC", "Arial", sans-serif;
+  font-family: "FuturaDemiC", Arial, sans-serif;
 }
 
 .contacts__link--underline:hover {
   color: #c88b28;
 }
+
+/* MAIN */
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 707px;
+  background-color: #131313;
+}
+
+.hero__instagram {
+  position: absolute;
+  top: 260px;
+  left: 15px;
+  display: block;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.hero__wrapper {
+  margin-left: 82px;
+  padding-left: 60px;
+  padding-top: 194px;
+  background-image: url("./assets/img/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 19px;
+  font-size: 40px;
+  line-height: 53px;
+  font-family: "YesevaOne-Regular", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  width: 500px;
+  margin: 0;
+  margin-bottom: 41px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.hero__button {
+  margin-right: 19px;
+  margin-bottom: 208px;
+}
+
+/* Projects */
+.projects {
+  position: relative;
+  min-height: 610px;
+  background-color: #131313;
+}
+
+.projects__complete {
+  position: absolute;
+}
+
+.projects__slider {
+  padding-top: 60px;
+  padding-left: 100px;
+}
+
+/* Slider */
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 594px;
+}
+
+/* Description */
 /*# sourceMappingURL=main.css.map */
