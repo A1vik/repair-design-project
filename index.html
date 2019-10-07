@@ -77,64 +77,66 @@
             <button class="hero__button button"><span class="hero__hide">SUBMIT YOUR</span> APPLICATION</button>
           </div>
         </div>
+        <a href="#" class="hero__scroll-down">Scroll down</a>
       </section>
 
-      <section class="projects">
-        <div class="projects__complete">
-          <h2 class="projects__complete-title">Completed <br> projects</h2>
-          <p class="projects__complete-description">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+      <section class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__wrapper-title">
+            <h2 class="slider__title">Completed <br> projects</h2>
+            <p class="slider__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+          </div>
+          <ul class="slider__description description">
+            <li class="description__item">
+              <h3 class="description__subtitle">City:</h3>
+              <p class="description__text">Rostov-on-Don <br> LCD admiral</p>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">apartment area:</h3>
+              <p class="description__text">81 m2</p>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">Repair time:</h3>
+              <p class="description__text">3.5 months</p>
+            </li>
+            <li class="description__item">
+              <h3 class="description__subtitle">Repair Cost:</h3>
+              <p class="description__text">Upon request</p>
+            </li>
+          </ul>
         </div>
-        <div class="projects__slider slider">
+        <div class="slider__info">
           <ul class="slider__list">
             <li class="slider__item slider__item--active">Rostov-on-Don, Admiral</li>
             <li class="slider__item">Sochi Thieves</li>
             <li class="slider__item">Rostov-on-Don Patriotic</li>
           </ul>
-          <div class="slider__wrapper">
-            <ul class="slider__description description">
-              <li class="description__item">
-                <h3 class="description__subtitle">City:</h3>
-                <p class="description__text">Rostov-on-Don <br> LCD admiral</p>
-              </li>
-              <li class="description__item">
-                <h3 class="description__subtitle">apartment area:</h3>
-                <p class="description__text">81 m2</p>
-              </li>
-              <li class="description__item">
-                <h3 class="description__subtitle">Repair time:</h3>
-                <p class="description__text">3.5 months</p>
-              </li>
-              <li class="description__item">
-                <h3 class="description__subtitle">Repair Cost:</h3>
-                <p class="description__text">Upon request</p>
-              </li>
-            </ul>
-            <div class="slider__images">
-              <img class="slider__image" src="./assets/img/slider-1.png" alt="">
-              <img class="slider__image" src="./assets/img/slider-2.png" alt="">
-            </div>
+          <div class="slider__images">
+            <img class="slider__image" src="./assets/img/slider-1.png" alt="">
+            <img class="slider__image" src="./assets/img/slider-2.png" alt="">
           </div>
+          <button class="slider__button"></button>
         </div>
       </section>
 
       <section class="control">
         <div class="control__wrapper--top">
-            <h2 class="control__title">Online control</h2>
+          <h2 class="control__title">Online control</h2>
         </div>
-        <div class="control__video"></div>
+        <div class="control__video"><iframe width="817" height="434" src="https://www.youtube.com/embed/ZlfAjbQiL78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="control__wrapper--bottom">
           <p class="control__description">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
           <form class="control__form form" action="">
             <div class="form__wrapper">
               <label for="">
                 Name
-                <input type="text">
+                <input type="text" placeholder="What is your name:">
               </label>
               <label for="">
                 Phone
-                <input type="phone">
+                <input type="phone" placeholder="Your phone number:">
               </label>
-              <input type="submit" value="Submit">
+              <input class="button" type="submit" value="Submit">
             </div>
             <input type="checkbox">
             <label for="">I agree to the processing of personal data</label>
