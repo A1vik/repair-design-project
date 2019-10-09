@@ -74,7 +74,7 @@
           </p>
           <div class="hero__buttons">
             <button class="hero__button button">CALCULATE THE COST</button>
-            <button class="hero__button button"><span class="hero__hide">SUBMIT YOUR</span> APPLICATION</button>
+            <button class="hero__button button button--alt"><span class="hero__hide">SUBMIT YOUR</span> APPLICATION</button>
           </div>
         </div>
         <a href="#" class="hero__scroll-down">Scroll down</a>
@@ -104,6 +104,23 @@
               <p class="description__text">Upon request</p>
             </li>
           </ul>
+          <ul class="description__controls">
+            <li class="description__control">
+              <a href="#" class="description__link description__link--left-arrow"></a>
+            </li>
+            <li class="description__control">
+              <a href="#" class="description__link description__link--active"></a>
+            </li>
+            <li class="description__control">
+              <a href="#" class="description__link"></a>
+            </li>
+            <li class="description__control">
+              <a href="#" class="description__link"></a>
+            </li>
+            <li class="description__control">
+              <a href="#" class="description__link description__link--right-arrow"></a>
+            </li>
+          </ul>
         </div>
         <div class="slider__info">
           <ul class="slider__list">
@@ -128,18 +145,19 @@
           <p class="control__description">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
           <form class="control__form form" action="">
             <div class="form__wrapper">
-              <label for="">
-                Name
-                <input type="text" placeholder="What is your name:">
+              <label class="form__label">
+                Name <br>
+                <input class="form__input" type="text" placeholder="What is your name:">
               </label>
-              <label for="">
-                Phone
-                <input type="phone" placeholder="Your phone number:">
+              <label class="form__label">
+                Phone <br>
+                <input class="form__input" type="phone" placeholder="Your phone number:">
               </label>
-              <input class="button" type="submit" value="Submit">
+              <input class="form__button button" type="submit" value="Submit">
             </div>
-            <input type="checkbox">
-            <label for="">I agree to the processing of personal data</label>
+            <label class="form__checkbox-label">
+              <input type="checkbox">
+              I agree to the processing of personal data</label>
           </form>
         </div>
       </section>
@@ -309,10 +327,36 @@
             <h3 class="work-description__description-title">Departure for 
                 measurements premises</h3>
             <p class="work-description__description-text">
-                After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+                After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. <br> He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
             </p>
             <div class="work-description__description-controls"></div>
           </div>
+          <ul class="work-description__controls">
+              <li class="work-description__control">
+                <a href="#" class="work-description__link work-description__link--left-arrow"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link work-description__link--active"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link"></a>
+              </li>
+              <li class="work-description__control">
+                <a href="#" class="work-description__link work-description__link--right-arrow"></a>
+              </li>
+            </ul>
         </div>
         <div class="slider-work__wrapper">
           <ul class="slider-work__list">
@@ -352,48 +396,51 @@
         <div class="team__wrapper--top">
           <h2 class="team__title">Our team</h2>
           <p class="team__subtitle">
-            Our team has helped to become happier for more than
+            Our team has helped to become happier for more than <br>
               500 families and we are not going to stop
           </p>
         </div>
         <ul class="team__list">
-          <li class="team__item">
+          <li class="team__item team__item--head">
             <img class="team__image" src="./assets/img/img-team1.png" alt="">
             <p class="team__description">
               <span class="team__name">Dmitry tulyakov</span>
               <span class="team__job">Project manager</span>
+              <button class="team__button button">Work experience 8 years</button>
             </p>
-            <button class="team__button button">Work experience 8 years</button>
+            
           </li>
-          <li class="team__item">
+          <li class="team__item team__item--designer">
             <img class="team__image" src="./assets/img/img-team2.png" alt="">
             <p class="team__description">
               <span class="team__name">Larisa Kotlyarova</span>
               <span class="team__job">Designer</span>
+              <button class="team__button button">Work experience 6 years</button>
             </p>
-            <button class="team__button button">Work experience 6 years</button>
+            
           </li>
-          <li class="team__item">
+          <li class="team__item team__item--foreman">
             <img class="team__image" src="./assets/img/img-team3.png" alt="">
             <p class="team__description">
               <span class="team__name">Alexey Efimov</span>
               <span class="team__job">Foreman</span>
+              <button class="team__button button">Work experience 12 years</button>
             </p>
-            <button class="team__button button">Work experience 12 years</button>
+            
           </li>
         </ul>
         <div class="team__wrapper--bottom">
           <p class="team__text">
-              Each employee of our company is a qualified full-time specialist 
-              with work experience of 6 years.
-              We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
+              Each employee of our company is a qualified full-time specialist <br>
+              with work experience of 6 years. <br>
+              We do not have laborers and guest workers, each employee carries out <br> work corresponding to his specialty.
           </p>
         </div>
       </section>
 
       <section class="clients">
         <h2 class="clients__title">Our clients</h2>
-        <p class="clients__subtitle">80% of our customers recommend us to their
+        <p class="clients__subtitle">80% of our customers recommend us to their <br>
             friends and family.</p>
         <ul class="clients__list">
           <li class="clients__item">
@@ -402,35 +449,48 @@
               <span class="clients__name">Fedosova Maria <br>
                   Konstantinovna</span>
             </p>
-            <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS</p>
-            <button class="clients__button button"></button>
+            <p class="clients__review">I want to thank the guys for their work. we put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters</p>
+            <button class="clients__button button"><span class="clients__perimeter">40 m2</span><span class="clients__days">48 DAYS</span></button>
           </li>
           <li class="clients__item">
             <p class="clients__info">
               <img src="./assets/img/avatar-2.png" alt="" class="clients__avatar">
               <span class="clients__name">Afanasyev Sergey <br> Alexandrovich</span>
             </p>
-            <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS</p>
-            <button class="clients__button button"></button>
+            <p class="clients__review">I want to thank the guys for their work. we put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters</p>
+            <button class="clients__button button"><span class="clients__perimeter">90 м2</span><span class="clients__days">128 DAYS</span></button>
           </li>
           <li class="clients__item">
             <p class="clients__info">
               <img src="./assets/img/avatar-3.png" alt="" class="clients__avatar">
               <span class="clients__name">Kiriev Egor <br> Leonidovich</span>
             </p>
-            <p class="clients__review">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS</p>
-            <button class="clients__button button"></button>
+            <p class="clients__review">I want to thank the guys for their work. we put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters</p>
+            <button class="clients__button button"><span class="clients__perimeter">56 м2</span><span class="clients__days">86 DAYS</span></button>
           </li>
         </ul>
       </section>
 
       <form class="question" action="">
         <h2 class="question__title">have any questions?</h2>
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="checkbox">
-        <input type="submit" value="submit">
+        <label class="question__label question__label--name">
+          Name <br>
+          <input class="question__input" type="text" placeholder="What is your name:">
+        </label>
+        <label class="question__label">
+          Phone <br>
+          <input class="question__input" type="phone" placeholder="Your phone number:">
+        </label>
+        <br>
+        <label class="question__label question__label--question">
+          Question <br>
+          <input class="question__input question__input--question" type="text" placeholder="I want to know:">
+        </label>
+        <label class="question__checkbox-label">
+          <input class="question__checkbox-input" type="checkbox">
+          I agree to the processing of personal data
+        </label>
+        <input class="question__button button" type="submit" value="submit">
       </form>
 
       <footer class="page__footer">
