@@ -2,56 +2,56 @@
   font-family: 'FuturaBookC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaBookC"), url("../../repair-design-project/assets/fonts/FuturaBookC.woff") format("woff");
+  src: local("FuturaBookC"), url("./assets/fonts/FuturaBookC.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaBookC-Italic';
   font-style: italic;
   font-weight: 400;
-  src: local("FuturaBookC-Italic"), url("../../repair-design-project/assets/fonts/FuturaBookC-Italic.woff") format("woff");
+  src: local("FuturaBookC-Italic"), url("./assets/fonts/FuturaBookC-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaDemiC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaDemiC"), url("../../repair-design-project/assets/fonts/FuturaDemiC.woff") format("woff");
+  src: local("FuturaDemiC"), url("./assets/fonts/FuturaDemiC.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaDemiC-Italic';
   font-style: italic;
   font-weight: 400;
-  src: local("FuturaDemiC-Italic"), url("../../repair-design-project/assets/fonts/FuturaDemiC-Italic.woff") format("woff");
+  src: local("FuturaDemiC-Italic"), url("./assets/fonts/FuturaDemiC-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaMediumC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaMediumC"), url("../../repair-design-project/assets/fonts/FuturaMediumC.woff") format("woff");
+  src: local("FuturaMediumC"), url("./assets/fonts/FuturaMediumC.woff") format("woff");
 }
 
 @font-face {
   font-family: 'ProximaNova-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("ProximaNova-Regular"), url("../../repair-design-project/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  src: local("ProximaNova-Regular"), url("./assets/fonts/ProximaNova-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'YesevaOne-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.woff") format("woff");
+  src: local("YesevaOne-Regular"), url("./assets/fonts/YesevaOne-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaBookC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaBookC"), url("../../repair-design-project/assets/fonts/FuturaBookC.woff") format("woff");
+  src: local("FuturaBookC"), url("./assets/fonts/FuturaBookC.woff") format("woff");
 }
 
 @font-face {
@@ -65,35 +65,35 @@
   font-family: 'FuturaDemiC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaDemiC"), url("../../repair-design-project/assets/fonts/FuturaDemiC.woff") format("woff");
+  src: local("FuturaDemiC"), url("./assets/fonts/FuturaDemiC.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaDemiC-Italic';
   font-style: italic;
   font-weight: 400;
-  src: local("FuturaDemiC-Italic"), url("../../repair-design-project/assets/fonts/FuturaDemiC-Italic.woff") format("woff");
+  src: local("FuturaDemiC-Italic"), url("./assets/fonts/FuturaDemiC-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: 'FuturaMediumC';
   font-style: normal;
   font-weight: 400;
-  src: local("FuturaMediumC"), url("../../repair-design-project/assets/fonts/FuturaMediumC.woff") format("woff");
+  src: local("FuturaMediumC"), url("./assets/fonts/FuturaMediumC.woff") format("woff");
 }
 
 @font-face {
   font-family: 'ProximaNova-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("ProximaNova-Regular"), url("../../repair-design-project/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  src: local("ProximaNova-Regular"), url("./assets/fonts/ProximaNova-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'YesevaOne-Regular';
   font-style: normal;
   font-weight: 400;
-  src: local("YesevaOne-Regular"), url("../../repair-design-project/assets/fonts/YesevaOne-Regular.woff") format("woff");
+  src: local("YesevaOne-Regular"), url("./assets/fonts/YesevaOne-Regular.woff") format("woff");
 }
 
 html {
